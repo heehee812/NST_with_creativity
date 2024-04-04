@@ -39,14 +39,17 @@
 
 **Example 1**
 <img width="554" alt="Screenshot 2024-04-04 at 7 47 19 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/1254235f-8c93-4ad3-b7e1-581997d52ef1">
+
 <img width="381" alt="Screenshot 2024-04-04 at 7 47 10 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/6dbd4400-c8f3-4238-b595-803ede981898">
 
 **Example 2**
 <img width="590" alt="Screenshot 2024-04-04 at 7 47 38 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/bd695eb1-aba0-4c58-ada6-1700d8f3f388">
+
 <img width="460" alt="Screenshot 2024-04-04 at 7 47 29 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/eff4893b-fabe-4a6f-8762-a8cea95db811">
 
 **Example 3**
 <img width="598" alt="Screenshot 2024-04-04 at 7 47 55 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/d0ef0f3d-f1ca-4634-a2f3-a778b9dfa94b">
+
 <img width="569" alt="Screenshot 2024-04-04 at 7 47 45 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/ecd4a5db-e041-458f-9114-40c7c0aaacf9">
 
 
