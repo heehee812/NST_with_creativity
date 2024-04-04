@@ -9,49 +9,50 @@
 當一個創作概念保有大多原創做的特性時，意即創作者將原有概念結合成一個新的創作，我們將其稱作 Combinational Creativity。而依照保原創作 Content 及 Style 的設計特性，我們可想出四種可能的實現方法。第一種，保有原有的 Style 結合部分 Content。第二種，保有部分 Style 結合步部分 Content。第三種，保有部分 Style 結合所有 Content。第四種，保有原有 Style 結合所有 Content。而本 Study 中，我們將 Content 取 Grayscale ，其中白色部分作為被保留的面積（Figure 1-1），如此一來，不同的圖片都會有不同被保留的元素，而將黑色部分則轉換為Style （Figure1-2），最後取得結果。
 
 > Figure 1-1. 選擇 content 中要保留的元素
-![Screenshot 2024-04-04 at 7.40.02 PM-min](https://hackmd.io/_uploads/ryMmNGnJC.png)
+<img width="596" alt="Screenshot 2024-04-04 at 7 40 02 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/47854fd9-acdb-4db1-879d-911b3ce5560a">
+
 
 > Figure 1-2. 從 Style 中取出 Content 黑色部分的遮罩
-![Screenshot 2024-04-04 at 7.41.02 PM-min](https://hackmd.io/_uploads/Bk7mVMhyA.png)
+<img width="597" alt="Screenshot 2024-04-04 at 7 41 02 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/56fd8e65-006c-4b17-9bd2-71c66ac39ec9">
+
 
 #### Exploratory Creativity
 當一個作品出現原有作品轉換過的元素及類似模式時，我們稱作為 Exploratory Creativity。而依照改造原有作品特性的特點，透過元素的排列方式及大小變化，並結合 Style 可實現。故我們利用對 Content 取Grayscale 選出可被重新排列的元素，並改變其大小（Figure2-1），而將剩下的部分利用 NST 技術將其與 Style做結合（Figure2-2）。
 
 > Figure 2-1. 重新排列及改變 content 中元素大小
-![Screenshot 2024-04-04 at 7.41.34 PM-min](https://hackmd.io/_uploads/B1GmNGny0.png)
+<img width="594" alt="Screenshot 2024-04-04 at 7 41 34 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/54e0dd93-98c1-4953-b877-fd0cb1688fcc">
 
 > Figure 2-2. 將重新排列過後的 content 與 style 做結合
-![Screenshot 2024-04-04 at 7.42.44 PM-min](https://hackmd.io/_uploads/rJ77NzhJ0.png)
+<img width="591" alt="Screenshot 2024-04-04 at 7 42 44 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/d73454ff-fd42-4a80-a469-cc7ce9750838">
 
 #### Transformational Creativity
 當一個作品幾乎不同於原創作，僅可從一些 pattern 中找到相似之處，我們推測這是 Tranformational Creativity。而依照圖片特性被改變的特徵來看，我們須盡可能的改變圖片參數，因此，我們先透過 Grayscale 技術取出 Content 中白色部分作為改變顏色參數的範圍，並改變元素大小，並保留剩下部分（Figure3-1）。之後再透過 NST 技術中，計算 Content 及 Style Loss function 的方式，並利用 Gradient descent 找出 Content 與 Style 中最相容的 pattern 作為output（Figure3-2）。
 
 > Figure 3-1. 改變 content 中元素大小及顏色
-![Screenshot 2024-04-04 at 7.45.55 PM-min](https://hackmd.io/_uploads/ryMmEz2JR.png)
+<img width="593" alt="Screenshot 2024-04-04 at 7 45 55 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/1fbc5619-ee06-4d32-9b8e-bad164ecb537">
 
 > Figure 3-2. 利用 NST 轉換 content 及 style
-![Screenshot 2024-04-04 at 7.46.07 PM-min](https://hackmd.io/_uploads/Sy7QVzn1A.png)
-
-
-
+<img width="596" alt="Screenshot 2024-04-04 at 7 46 07 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/7c3667b2-15f1-48dd-b3bd-545b73a358fb">
 
 ### Result
 這邊放幾個例子來看看實際執行結果。
 
 **Example 1**
-![Screenshot 2024-04-04 at 7.47.10 PM-min](https://hackmd.io/_uploads/HkzQ4fhkA.png)
-![Screenshot 2024-04-04 at 7.47.19 PM-min](https://hackmd.io/_uploads/H1NXEf3y0.png)
+<img width="554" alt="Screenshot 2024-04-04 at 7 47 19 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/1254235f-8c93-4ad3-b7e1-581997d52ef1">
+<img width="381" alt="Screenshot 2024-04-04 at 7 47 10 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/6dbd4400-c8f3-4238-b595-803ede981898">
 
 **Example 2**
-![Screenshot 2024-04-04 at 7.47.29 PM-min](https://hackmd.io/_uploads/SJmQ4M21C.png)
-![Screenshot 2024-04-04 at 7.47.38 PM-min](https://hackmd.io/_uploads/ByN74G21C.png)
+<img width="590" alt="Screenshot 2024-04-04 at 7 47 38 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/bd695eb1-aba0-4c58-ada6-1700d8f3f388">
+<img width="460" alt="Screenshot 2024-04-04 at 7 47 29 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/eff4893b-fabe-4a6f-8762-a8cea95db811">
 
 **Example 3**
-![Screenshot 2024-04-04 at 7.47.45 PM-min](https://hackmd.io/_uploads/S1Qm4f21R.png)
-![Screenshot 2024-04-04 at 7.47.55 PM-min](https://hackmd.io/_uploads/SyV7NfnkA.png)
+<img width="598" alt="Screenshot 2024-04-04 at 7 47 55 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/d0ef0f3d-f1ca-4634-a2f3-a778b9dfa94b">
+<img width="569" alt="Screenshot 2024-04-04 at 7 47 45 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/ecd4a5db-e041-458f-9114-40c7c0aaacf9">
+
 
 **Example 4**
-![Screenshot 2024-04-04 at 7.48.03 PM-min](https://hackmd.io/_uploads/SJV74z3yC.png)
+<img width="598" alt="Screenshot 2024-04-04 at 7 48 03 PM-min" src="https://github.com/heehee812/NST_with_creativity/assets/57358478/4745a706-f66f-48a2-a046-0a483a926077">
+
 
 ### Conclusion
 當三個模型在運行時，皆有表現出其特徵。而我認為 Combinational Creativity 為其中表現最好的。Exploratory Creativity 若能做到隨機排列效果會更好。而在 Transformational Creativity 中，從以上例子可以看到，在某些情況下，還是可以從其中看出原創作的影子。例如 content 顏色太鮮明造成 style  能影響的程度不高 。故若能真的實現改變圖片中的每個參數會更好，或是 content 中的元素若真的能被改變形狀而非僅侷限於大小上的改變，效果會更好。
